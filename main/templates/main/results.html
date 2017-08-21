@@ -1,0 +1,45 @@
+
+{% extends "main/base.html" %}
+
+{% block content %}
+<!-- <div class="site-wrapper"> -->
+<div class="jumbotron" style="margin: auto; color:black;
+    width: 95%; padding: 70px 0 70px; text-align:justify">
+{% if df_len > 0 %}
+
+
+<div class="table-responsive">
+
+<table class="table table-bordered">
+    <th>Cases Found: {{df_len}}</th>
+    {% for key, values in empty_dict.items %}
+
+      <tr class="table-striped">
+        <td>{{key}}: </td>
+        {% for v in values %}
+        <td>{{v}}
+
+        <!-- {% if key == 'Date' %}{{v|slice:":2"}}{{v|slice:"3:5"}}{{v|slice:"6:11"}}
+          <br><a style="color:blue" href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates={{v|slice:'6:11'}}{{v|slice:':2'}}{{v|slice:'3:5'}}/{{v|slice:'6:11'}}{{v|slice:':2'}}{{v|slice:'3:5'}}">Add to gCal</a>
+        {% endif %} -->
+
+          </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+</div>
+<!-- <form method="post" style="margin: auto;">
+{% csrf_token %}
+<h4>{{form.email}}</h4>
+<input class="btn btn-lg btn-success" type="submit" value="Search" />
+</form> -->
+{% endif %}
+
+{% if df_len == 0 %}
+<br><center>
+  <div class="alert alert-danger" role="alert">No Results</div>
+  <br><a href="/" style="color:blue">try again</a></div>
+{% endif %}
+
+{% endblock %}
