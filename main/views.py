@@ -13,7 +13,7 @@ from django.core.validators import validate_email
 from django.contrib import messages
 from main.models import *
 # Create your views here.
-engine = sa.create_engine('mysql://root:sq8337269!@104.196.179.105:3306/voyansqldb?')
+engine = sa.create_engine('not putting my db keys on github thank you')
 
 def search(request):
     form = mainForm()

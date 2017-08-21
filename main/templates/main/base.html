@@ -168,7 +168,14 @@ body {
   }
 }
 </style>
-
+<meta charset="UTF-8">
+{% if title %}
+    <title>{{ title }}</title>
+{% else %}
+    <title>Hillsborough and Pinellas County Criminal and Traffic Court Date Search</title>
+{% endif %}
+<meta name="google-site-verification" content="pxaKyOA6mnGXUd4G6xgP2Da392CG16T1MpOsk1jPBP4" />
+<meta name="msvalidate.01" content="118747DAAE7CE2569411737A5DF06232" />
 </head>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="/">Court Date Search</a>
@@ -176,7 +183,7 @@ body {
             <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
             <div class="dropdown-menu" style="position: absolute; left: 190px; top: 50px;" aria-labelledby="dropdown01">
 
-              <a class="dropdown-item" href="#">Contact us</a>
+              <a class="dropdown-item" href="mailto:info@courtdatesearch.com?Subject=Inquiry%20From%20Website">Contact us</a>
               <a class="dropdown-item" href="#">View on Github</a>
             </div>
 

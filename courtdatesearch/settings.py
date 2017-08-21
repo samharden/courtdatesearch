@@ -25,7 +25,7 @@ SECRET_KEY = '*!_o-r_s7mgj39sj@&li@rbne443!8!lp^b)u#_c2kgek8ds(+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['courtdate-test.herokuapp.com', 'courtdatesearch.com', 'www.courtdatesearch.com',]
+ALLOWED_HOSTS = []
 
 
 # Application definition
